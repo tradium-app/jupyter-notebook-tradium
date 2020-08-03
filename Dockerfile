@@ -10,5 +10,5 @@ RUN pip install -r requirements.txt
 ENV port=$PORT
 ENV JUPYTER_ENABLE_LAB=yes
 
-CMD start-notebook.sh
+CMD start-notebook.sh --port=$PORT
 # CMD jupyter notebook --port=$PORT
