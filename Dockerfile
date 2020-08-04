@@ -13,5 +13,5 @@ ENV port=$PORT
 ENV JUPYTER_ENABLE_LAB=yes
 ENV GRANT_SUDO=yes
 
-CMD start-notebook.sh --port=$PORT --GRANT_SUDO=yes
+CMD start-notebook.sh --port=$PORT
 # CMD jupyter notebook --port=$PORT
