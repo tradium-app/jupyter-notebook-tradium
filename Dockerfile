@@ -11,7 +11,5 @@ USER root
 
 ENV port=$PORT
 ENV JUPYTER_ENABLE_LAB=yes
-ENV GRANT_SUDO=yes
 
-CMD start-notebook.sh --port=$PORT
-# CMD jupyter notebook --port=$PORT
+CMD start-notebook.sh --port=$PORT --allow-root --ip=0.0.0.0 --NotebookApp.token=$JupyterPassword
